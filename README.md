@@ -13,6 +13,8 @@
 ![image](https://github.com/luckyjp6/Simple-Debbuger/assets/96563567/c29e2c77-e47c-4cd8-8474-5b234f3100be)
 
 ## 實作功能
+### Debugger基礎
+- 實作細節：fork子程式，在子程式使用PTRACE_TRACEME，接著execvp出要追蹤的executable並給予其對應參數。
 ### 顯示反組譯後的指令
 - 功能：顯示五個指令。
     <img width="595" alt="image" src="https://github.com/luckyjp6/Simple-Debbuger/assets/96563567/233c91de-e967-488c-88eb-6bab4ee2c867">  
