@@ -1,4 +1,4 @@
-# Simple Debugger
+# Simple Instruction-level Debugger
 此repo收錄課程「高等Unix」的大作業二。  
 使用ptrace等工具實作簡易的debugger，稱為sdb。  
 
