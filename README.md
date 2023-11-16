@@ -16,10 +16,10 @@
 ### Debugger基礎
 - 實作細節：fork子程式，在子程式使用PTRACE_TRACEME，接著execvp出要追蹤的executable並給予其對應參數。
 ### 顯示反組譯後的指令
-- 功能：顯示五個指令。
+- 功能：顯示五個指令。  
     <img width="595" alt="image" src="https://github.com/luckyjp6/Simple-Debbuger/assets/96563567/233c91de-e967-488c-88eb-6bab4ee2c867">  
-- 特殊情況：指令不足五個，僅顯示剩下的。
-<img width="546" alt="image" src="https://github.com/luckyjp6/Simple-Debbuger/assets/96563567/4c54f82a-6535-4d79-a377-455219991442">  
+- 特殊情況：指令不足五個，僅顯示剩下的。  
+    <img width="546" alt="image" src="https://github.com/luckyjp6/Simple-Debbuger/assets/96563567/4c54f82a-6535-4d79-a377-455219991442">  
 - 實作細節：使用PTRACE_PEEKTEXT和暫存器rip的值將指令提取出，再使用capstone工具```cs_disasm```反組譯。
 
 ### si
